@@ -28,3 +28,11 @@ func main() {
 
 	r.Run(":8899")
 }
+
+// 调用参数
+// POST
+// http://127.0.0.1:8899/testBind
+
+// {
+//     "name":"zhangmeng","age":23,"sex":true
+// }
