@@ -2,7 +2,7 @@
 package main
 
 import (
-	"zap"
+	"go.uber.org/zap"
 )
 
 // "github.com/bigwhite/zap-usage/pkg/log"

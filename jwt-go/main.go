@@ -12,19 +12,19 @@ import (
 
 type MyClaims struct {
 	Username string `json:"username"`
-	Password string `json:"password"`
+	// Password string `json:"password"`
 	jwt.StandardClaims
 }
 
-var key = []byte("secret")
+var SecretKey = []byte("lHxg1qg53wwZ")
 
-func GenToken(username string, password string) (string, error) {
+func GenToken(username string) (string, error) {
 	// 创建一个我们自己的声明
 	c := MyClaims{
 		username,
-		password,
+		// password,
 		jwt.StandardClaims{
-			ExpiresAt: time.Now().Add(time.Second * 30).Unix(),
+			ExpiresAt: time.Now().Add(time.Second * 30000).Unix(),
 			Issuer:    "zhangmeng",
 		},
 	}
@@ -32,14 +32,14 @@ func GenToken(username string, password string) (string, error) {
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, c)
 	// 使用指定的secret签名并获得完整的编码后的字符串token
 	// 注意这个地方一定要是直接切片不能是字符串
-	return token.SignedString(key)
+	return token.SignedString(SecretKey)
 }
 
 func ParseToken(tokenstring string) (*MyClaims, error) {
 	// 解析token
 	token, err := jwt.ParseWithClaims(tokenstring, &MyClaims{},
 		func(token *jwt.Token) (i interface{}, err error) {
-			return key, nil
+			return SecretKey, nil
 		})
 	if err != nil {
 		return nil, err
@@ -51,13 +51,13 @@ func ParseToken(tokenstring string) (*MyClaims, error) {
 }
 
 func main() {
-	s, e := GenToken("zm", "123")
+	s, e := GenToken("18600050168")
 	if e != nil {
 		panic(e)
 	}
 	fmt.Printf("s: %v\n", s)
 
-	// token := "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InptIiwicGFzc3dvcmQiOiIxMjMiLCJleHAiOjE2NTAyODY5NDIsImlzcyI6InpoYW5nbWVuZyJ9.criVL8WTvkB8vXY8AUVzJhz7BGwKdx1xIxknAcYHQdo"
+	// token := "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjE4NjAwMDUwMTY4IiwiZXhwIjoxNjUzNTY2ODQ1LCJpc3MiOiJ6aGFuZ21lbmcifQ.S701gN0GvXMoUk3cqHmCjOGCYmg1jT0OImM6Ha0XabU"
 
 	token := s
 
@@ -67,6 +67,6 @@ func main() {
 	}
 
 	fmt.Printf("mc.Username: %v\n", mc.Username)
-	fmt.Printf("mc.Password: %v\n", mc.Password)
+	// fmt.Printf("mc.Password: %v\n", mc.Password)
 
 }
