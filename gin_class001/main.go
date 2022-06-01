@@ -30,11 +30,11 @@ func main() {
 		})
 	})
 
-	r.GET("/path/:id", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"success": true,
-		})
-	})
+	// r.GET("/path/:id", func(c *gin.Context) {
+	// 	c.JSON(200, gin.H{
+	// 		"success": true,
+	// 	})
+	// })
 
 	r.Run(":8899")
 }
