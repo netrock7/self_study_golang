@@ -1,0 +1,25 @@
+{
+	"MySQL": {
+		"DBHost": "”172.20.27.162“",
+		"dbuser": "go",
+		"dbpassword": "ha9nD784yO7MFB",
+		"DBPort": 3306
+	},
+	"redisUser": {
+		"redishost": "172.20.27.162",
+		"redispassword": "8888",
+		"redisport": 6379,
+		"redisdb": 0,
+		"redisexpire": 3000
+	},
+	"redisGate": {
+		"redishost": "172.20.27.162",
+		"redispassword": "8888",
+		"redisport": 6379,
+		"redisdb": 9,
+		"redisexpire": 3000
+	},
+	"jwt": {
+		"jwtkey": "!42&%MFFezZmB8a^RhUiGa$l5g2z65HZ"
+	}
+}

@@ -1,0 +1,82 @@
+2022-06-14T11:15:00.026+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"user-web.yaml","group":"dev","tenant":"26ad453c-c8b0-4edf-aa52-a317c40032b8"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2022-06-14T11:15:00.030+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"user-web.yaml","group":"dev","tenant":"26ad453c-c8b0-4edf-aa52-a317c40032b8"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2022-06-14T11:15:00.032+0800	[31mERROR[0m	nacos_server/nacos_server.go:194	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"user-web.yaml","group":"dev","tenant":"26ad453c-c8b0-4edf-aa52-a317c40032b8"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2022-06-14T11:15:00.032+0800	[31mERROR[0m	config_client/config_client.go:191	get config from server error:[404] config data not exist
+ 
+2022-06-14T11:15:00.032+0800	[33mWARN[0m	config_client/config_client.go:196	[client.GetConfig] config not found, dataId: user-web.yaml, group: dev, namespaceId: 26ad453c-c8b0-4edf-aa52-a317c40032b8.
+2022-06-14T11:15:00.521+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 Long-Pulling-Timeout-No-Hangup:true accessKey: secretKey:] 
+
+2022-06-14T11:15:00.525+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T11:15:00.535+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T11:15:30.041+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T11:15:30.052+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T11:15:59.554+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T11:15:59.565+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T11:16:29.073+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T11:16:29.084+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T11:16:58.590+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T11:16:58.601+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T11:17:28.103+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T11:17:28.114+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T11:17:57.616+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T11:17:57.626+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T11:18:27.128+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T11:18:27.139+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T11:18:56.641+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T11:18:56.651+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T11:19:26.153+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T11:19:26.163+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T11:19:55.665+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T11:19:55.676+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:user-web.yamldev26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T12:20:00.733+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 Long-Pulling-Timeout-No-Hangup:true accessKey: secretKey:] 
+
+2022-06-14T12:20:00.738+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T12:20:00.750+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T12:20:30.252+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T12:20:30.263+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T12:20:59.766+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T12:20:59.776+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T12:21:29.279+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T12:21:29.291+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T12:21:58.793+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T12:21:58.805+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T12:22:28.308+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T12:22:28.319+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T12:22:57.822+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T12:22:57.834+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T12:23:27.336+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T12:23:27.347+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T12:23:56.850+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T12:23:56.862+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T12:24:26.364+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T12:24:26.376+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
+2022-06-14T12:24:55.879+0800	[34mINFO[0m	config_client/config_client.go:421	[client.ListenConfig] no change
+2022-06-14T12:24:55.890+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:geobase263758cb879efb0cb800bfd32527becf26ad453c-c8b0-4edf-aa52-a317c40032b8 tenant:26ad453c-c8b0-4edf-aa52-a317c40032b8] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+
