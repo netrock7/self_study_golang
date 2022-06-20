@@ -1,0 +1,13 @@
+server: 
+  IpAddr: "172.20.27.162"
+  ContextPath: "/nacos"
+  Port:        8848
+  Scheme:      "http"
+
+client: 
+  NamespaceId:         "26ad453c-c8b0-4edf-aa52-a317c40032b8"
+  TimeoutMs:           5000
+  NotLoadCacheAtStart: true
+  LogDir:              "tmp/nacos/log"
+  CacheDir:            "tmp/nacos/cache"
+  LogLevel:            "debug"

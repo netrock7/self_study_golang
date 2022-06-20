@@ -5,7 +5,7 @@ import (
 remote "github.com/yoyofxteam/nacos-viper-remote"
 )
 
-runtime_viper := viper.New()
+remote_viper := viper.New()
 // 配置 Viper for Nacos 的远程仓库参数
 remote.SetOptions(&remote.Option{
    Url:         "172.20.27.162",            // nacos server 多地址需要地址用;号隔开，如 Url: "loc1;loc2;loc3"
