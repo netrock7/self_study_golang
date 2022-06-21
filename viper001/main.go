@@ -6,9 +6,11 @@ import (
 	"github.com/spf13/viper"
 )
 
-func ReadYaml(NacosConfig Config) (NConfig Config) {
+var NacosConfig *Config
+
+func ReadYaml() {
 	v := viper.New()
-	v.AddConfigPath("./viper001/config")
+	v.AddConfigPath("./config")
 	v.SetConfigName("config")
 	v.SetConfigType("yaml")
 
@@ -19,25 +21,31 @@ func ReadYaml(NacosConfig Config) (NConfig Config) {
 	fmt.Printf("v: %v\n", v)
 
 	// NacosConfig := Config{}
+	err = v.Unmarshal(&NacosConfig)
+	if err != nil {
+		panic(err)
+	}
 
-	NacosConfig.Server.IpAddr = v.GetString("server.IpAddr")
-	NacosConfig.Server.ContextPath = v.GetString("server.ContextPath")
-	NacosConfig.Server.Port = v.GetString("server.Port")
-	NacosConfig.Server.Scheme = v.GetString("server.Scheme")
-	NacosConfig.Client.NamespaceId = v.GetString("client.NamespaceId")
-	NacosConfig.Client.TimeoutMs = v.GetString("client.TimeoutMs")
-	NacosConfig.Client.NotLoadCacheAtStart = v.GetString("client.NotLoadCacheAtStart")
-	NacosConfig.Client.LogDir = v.GetString("client.LogDir")
-	NacosConfig.Client.CacheDir = v.GetString("client.CacheDir")
-	NacosConfig.Client.LogLevel = v.GetString("client.LogLevel")
+	fmt.Println(NacosConfig.Server.IpAddr)
+
+	// NacosConfig.Server.IpAddr = v.GetString("server.IpAddr")
+	// NacosConfig.Server.ContextPath = v.GetString("server.ContextPath")
+	// NacosConfig.Server.Port = v.GetInt64("server.Port")
+	// NacosConfig.Server.Scheme = v.GetString("server.Scheme")
+	// NacosConfig.Client.NamespaceId = v.GetString("client.NamespaceId")
+	// NacosConfig.Client.TimeoutMs = v.GetInt64("client.TimeoutMs")
+	// NacosConfig.Client.NotLoadCacheAtStart = v.GetBool("client.NotLoadCacheAtStart")
+	// NacosConfig.Client.LogDir = v.GetString("client.LogDir")
+	// NacosConfig.Client.CacheDir = v.GetString("client.CacheDir")
+	// NacosConfig.Client.LogLevel = v.GetString("client.LogLevel")
 	// fmt.Printf("s: %v\n", Config.Server.IpAddr)
 
-	return NacosConfig
+	// return NacosConfig
 }
 
 func main() {
-	NacosConfig := Config{}
-	ReadYaml(NacosConfig)
+	// NacosConfig := Config{}
+	ReadYaml()
 	// fmt.Printf("NacosConfig: %v\n", NacosConfig)
 
 }
@@ -50,14 +58,14 @@ type Config struct {
 type Server struct {
 	IpAddr      string `json:"IpAddr"`
 	ContextPath string `json:"ContextPath"`
-	Port        string `json:"Port"`
+	Port        int64  `json:"Port"`
 	Scheme      string `json:"Scheme"`
 }
 
 type Client struct {
 	NamespaceId         string `json:"NamespaceId"`
-	TimeoutMs           string `json:"TimeoutMs"`
-	NotLoadCacheAtStart string `json:"NotLoadCacheAtStart"`
+	TimeoutMs           int64  `json:"TimeoutMs"`
+	NotLoadCacheAtStart bool   `json:"NotLoadCacheAtStart"`
 	LogDir              string `json:"LogDir"`
 	CacheDir            string `json:"CacheDir"`
 	LogLevel            string `json:"LogLevel"`
